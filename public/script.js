@@ -1,4 +1,4 @@
-$(document).ready(function(){       // les boutons pour voir les images avec un background transparant
+$(document).ready(function(){       
 $('.box-container').magnificPopup({
          delegate: 'a',
          type: 'image',
@@ -15,11 +15,11 @@ $('.box-container').magnificPopup({
 
     $(document).ready(function() {
         $(".scroll-link").click(function(event) {
-            event.preventDefault();        // Empêche le comportement de lien par défaut
-            var target = $(this).attr("href");          // Récupère la cible de l'attribut href <-
+            event.preventDefault();        
+            var target = $(this).attr("href");         
             $("html, body").animate(
                 {
-                    scrollTop: $(target).offset().top      // Fait défiler la page pour atteindre la cible
+                    scrollTop: $(target).offset().top     
                 },
                 1000      
             );
