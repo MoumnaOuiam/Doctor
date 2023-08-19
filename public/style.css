@@ -286,6 +286,22 @@ body{
     font-family: 'Dancing Script', cursive , 'Josefin Sans', sans-serif , 'Lugrasimo', cursive , 'Poppins', sans-serif ,'Roboto', sans-serif;
 }
 
+.email{
+    width: 443px;
+}
+.gender , .hour , .day{
+    width: 141px;
+}
+.contact form .inputBox{
+    display: flex;
+}
+.contact form input [type="submit"]{
+    width: 20rem;
+}
+.contact form input [type="submit"]:hover{
+    background-color: var(--black);
+}
+
 
 
 /*Commitment*/
@@ -343,21 +359,6 @@ form{
 
 
 
-.email{
-    width: 443px;
-}
-.gender , .hour , .day{
-    width: 141px;
-}
-.contact form .inputBox{
-    display: flex;
-}
-.contact form input [type="submit"]{
-    width: 20rem;
-}
-.contact form input [type="submit"]:hover{
-    background-color: var(--black);
-}
 .text-danger{
     color: red;
     font-size: 5px;
@@ -366,7 +367,6 @@ form{
     color: darkgreen;
     font-size: 5px;
 }
-
 .msg{
     font-size: 20px;
     display: flex;
