@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lugrasimo&family=Poppins:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lugrasimo&family=Poppins:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Dancing+Script:wght@700&family=Lugrasimo&family=Poppins:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans&family=Lugrasimo&family=Poppins:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Lugrasimo&family=Poppins:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+
+
+:root{
+    --blue:#0188DF;
+    --black:#354046;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    border: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+    font-weight: 400;
+    transition: all .2s linear;
+
+}
+
+*::selection{
+    background: var(--black);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x:hidden;
+}
+
+body{
+    overflow-x: hidden;
+ }
+
+  /* header */
+
+.header_container{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2rem 1rem;
+    z-index: 1000;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    height: 80px;
+     
+}
+ .header_container .HospitalName{
+    font-size: 3.7rem;
+    margin-left: 50px;
+    font-family: 'Dancing Script', cursive , 'Josefin Sans', sans-serif , 'Lugrasimo', cursive , 'Poppins', sans-serif ,'Roboto', sans-serif;
+}
+  .header_container .HospitalName span{
+    color: var(--blue);
+    font-size: 4rem;
+    font-family: 'Dancing Script', cursive , 'Josefin Sans', sans-serif , 'Lugrasimo', cursive , 'Poppins', sans-serif ,'Roboto', sans-serif;
+}
+
+.header_container a{
+    color: var(--black);
+    font-family: 'Dancing Script', cursive , 'Josefin Sans', sans-serif , 'Lugrasimo', cursive , 'Poppins', sans-serif ,'Roboto', sans-serif;
+}
+.header_container a:hover{
+    color: var(--blue);
+}
+.header_container .nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 80px;
+}
+.header_container .nav ul li{
+    margin: 0 2rem;
+
+}
+.header_container .nav ul li a{
+    font-size: 3rem;
+}
+
+/* home */  
+
+
+.content{
+    margin-left: 100px;
+}
+.paragraphe h1 , .paragraphe h3 ,.paragraphe h1 span{
+    font-family: 'Dancing Script', cursive, 'Lugrasimo', cursive, 'Poppins', sans-serif, 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.paragraphe h1{
+    font-size: 5rem;
+    color: var(--black); 
+}
+.paragraphe h1 span{
+    color: var(--blue) ;
+    font-family: 'Dancing Script', cursive, 'Lugrasimo', cursive ,'Poppins', sans-serif , 'Roboto', sans-serif , 'Satisfy', cursive;
+}               
+.paragraphe h3{    
+    font-size: 2rem;
+    color: var(--black);
+} 
+.FirstButton{
+    height: 3.5rem;
+    width: 15rem;
+    background: var(--blue);
+    color: #fff;
+    font-size: 1.7rem;
+    position: relative;
+    margin: 2rem 0;
+    z-index: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 8px 10px lightgrey;
+    overflow: hidden;
+}
+.FirstButton::before{
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--black);
+    z-index: -1;
+    transition: .2s linear;
+}
+.FirstButton:hover::before{
+    top: 0%;
+}
+
+/*about */
+
+
+.about{
+    display: flex;
+    align-items: center;
+    min-height: 120vh;  
+}
+.boxes{
+    width: 450px;
+    margin-left: 50px;
+    margin-right: 200px;
+    background: #eee;
+    border-radius: 5px;
+    box-shadow: 0px 8px 10px lightgrey;
+
+}
+.box {
+    margin-right: 27px; 
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    padding: 1em 1em;
+}
+.box h3 {
+    font-size: 2.5rem;
+}
+.box h3 i{
+    padding: 0 1rem;
+    color: var(--blue);
+}
+/* about details*/
+
+
+.AboutDetailsContainer{
+    overflow-x: hidden;
+    padding-top: 9rem;
+}
+.AboutDetails1{
+    padding: 3rem 6rem;
+    margin: 2rem 0;
+    font-size: 1.7rem;
+    padding-top: 9rem;
+    color: white;
+    background-color: var(--blue);
+    box-shadow: 0px 8px 10px rgb(87, 86, 86);
+    text-align: center;
+    
+}
+.MyTitle{
+    font-size: 3rem;
+    color:#05283f;
+    font-family: 'Barriecito', cursive, 'Dancing Script', cursive, 'Lugrasimo', cursive, 'Poppins', sans-serif, 'Roboto', sans-serif;
+}
+.AboutDetails2{
+    padding: 4rem 3rem;
+    margin: 2rem 2rem;
+}
+.BoxDetails{
+    max-width: 400px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    padding: 4rem 3rem;
+    margin: 2rem 0;
+}
+.para{
+    font-size: 2rem;
+    font-weight: 250;
+}
+.SecondTitle{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: lightcoral;
+}
+
+/*  facility  */
+
+
+.SecondContainer{
+    min-height: 100vh;
+    margin-bottom: 100px;
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    padding-top: 8rem;
+    color:var(--black);
+    font-family: 'Dancing Script', cursive , 'Josefin Sans', sans-serif , 'Lugrasimo', cursive , 'Poppins', sans-serif ,'Roboto', sans-serif;
+}
+.box-container{
+    display: flex;
+    flex-direction: column;
+}
+.SecondContainer .box-container1 ,  .SecondContainer .box-container2  {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+}
+.SecondContainer .box-container1 .box ,.SecondContainer .box-container2 .box {
+    height: 20rem;
+    width: 30rem;
+    margin: .3rem;
+    overflow: hidden;
+}
+
+.SecondContainer .box-container1 .box img , .SecondContainer .box-container2 .box img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.SecondContainer .box-container1 .box:hover , .SecondContainer .box-container2 .box:hover{
+    transform: scale(1.2);
+}
+
+
+/*footer*/
+
+
+.FooterContainer{
+    min-height: 30vh;
+    background-color:lightgrey;
+    list-style: none;
+    border: none !important;
+    outline: none !important;
+    text-decoration: none !important; 
+}
+.Share{
+    flex-direction: column;
+    font-size:15px;
+    color: var(--black); 
+}
+.Share a{
+    color: var(--black); 
+ }
+.FooterContainer .HospitalName a{
+    color:var(--black); 
+    font-size: 4rem;
+    font-family: 'Dancing Script', cursive , 'Josefin Sans', sans-serif , 'Lugrasimo', cursive , 'Poppins', sans-serif ,'Roboto', sans-serif;
+}
+.FooterContainer .HospitalName span{
+    color: var(--blue);
+    font-size: 5rem;
+    font-family: 'Dancing Script', cursive , 'Josefin Sans', sans-serif , 'Lugrasimo', cursive , 'Poppins', sans-serif ,'Roboto', sans-serif;
+}
+
+
+
+/*Commitment*/
+
+.OurCommitment{
+    padding: 4rem 3rem;
+    margin: 2rem 2rem;
+}
+.BoxCommit{
+    max-width: 400px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    padding: 4rem 3rem;
+    margin: 2rem 0;
+}
+.ParaCommit{
+    font-size: 2rem;
+    font-weight: 250;
+    text-align: center;
+}
+.SecondTitle{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: lightcoral;
+}
+
+/* contact */ 
+.contact{
+    background-color: var(--black);
+}
+form{
+    margin-left: 340px;
+    margin-top: 65px;
+    max-width: 460px;
+}
+.contact .heading{
+    color: #fff;
+}
+.contact form{
+    text-align: center;
+}
+.contact form .inputBox input, .contact form .inputBox select{
+    height: 49px;
+    width: 200x;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0px 8px 10px rgb(87, 86, 86);
+    margin-left: 10px;
+}
+
+
+
+
+.email{
+    width: 443px;
+}
+.gender , .hour , .day{
+    width: 141px;
+}
+.contact form .inputBox{
+    display: flex;
+}
+.contact form input [type="submit"]{
+    width: 20rem;
+}
+.contact form input [type="submit"]:hover{
+    background-color: var(--black);
+}
+.text-danger{
+    color: red;
+    font-size: 5px;
+}
+.text-success{
+    color: darkgreen;
+    font-size: 5px;
+}
+
+.msg{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.msg2{
+    font-size: 20px;
+    color: var(--blue);
+}
