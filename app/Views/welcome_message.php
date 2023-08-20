@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="<?= base_url('script.js'); ?>">
     <title>Mon Site</title>
 </head>
-<body class="overflow-x: hidden;">
+<body >
 <div>
 <?php 
 include_once 'templates/header.php'; 
