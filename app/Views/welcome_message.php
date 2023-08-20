@@ -24,7 +24,7 @@ include_once 'contactView.php';
 include_once 'templates/footer.php'; 
 ?>
 </div>
-<!-- Intégrer jQuery avant Magnific Popup -->
+<!-- Intégrer jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!--AOS js file -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
