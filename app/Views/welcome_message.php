@@ -34,7 +34,7 @@ include_once 'templates/footer.php';
 <script src="http://localhost/bootstrap/js/bootstrap.min.js"></script>
 
 <script>
-$(document).ready(function(){       //  background transparant
+$(document).ready(function(){       
 $('.box-container').magnificPopup({
          delegate: 'a',
          type: 'image',
@@ -43,7 +43,7 @@ $('.box-container').magnificPopup({
          }
     });
  });
-      //les images qui viennent à droite et à gauche
+     
  AOS.init({              
     duration: 1000,
     delay: 400
